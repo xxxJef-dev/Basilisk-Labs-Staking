@@ -41,7 +41,7 @@ const StakePage = () => {
   return (
     <Container>
       <Header farmId={farmId} setFarmId={setFarmId} />
-
+      
       <Flex
         sx={{
           flexDirection: "column",
@@ -80,7 +80,7 @@ const StakePage = () => {
             }}
             onClick={handleInitStakingButtonClick}
           >
-            Init staking account
+            Start Staking!
           </Button>
         ) : (
           <>
@@ -101,14 +101,14 @@ const StakePage = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <img
+                    {/* <img
                       sx={{
                         maxHeight: "2.4rem",
                       }}
-                      src="images/gemtransparent.gif"
-                    />
+                      src="images/blabs.png"
+                    /> */}
                     <Text>
-                      NFTs staked:&nbsp;
+                      Basilisks staked:&nbsp;
                       {farmerAccount?.gemsStaked.toNumber()}
                     </Text>
                   </Flex>
@@ -175,7 +175,7 @@ const StakePage = () => {
                         margin: "0 .4rem 0 .8rem",
                         maxHeight: "2.4rem",
                       }}
-                      src="images/icon-list-item.png"
+                      src="images/token-icon.png"
                     />
                     {availableA ? (
                       <b>{(availableA / 1000000000).toFixed(2)}</b>
@@ -320,7 +320,7 @@ const StakePage = () => {
                 {farmerVaultAccount ? (
                   <>
                     {/** Vault UI section */}
-                    {/* <ThemeHeading
+                    {/* <ThemeHeading>
                   variant="heading3"
                   sx={{
                     marginTop: "3.2rem",

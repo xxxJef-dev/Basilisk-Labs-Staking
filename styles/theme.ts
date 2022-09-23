@@ -22,13 +22,14 @@ export const getGradient = (rgb: string) => {
 const theme: Theme = {
   ...base,
   colors: {
-    background: "rgb(4, 4, 3)",
+    background: "rgb(4, 12, 3)", 
+    // background: "url('https://i.pinimg.com/564x/26/0a/e7/260ae7db29bdcc89dc62a0a9a1c8558d.jpg')",
     text: "rgb(226, 217, 211)",
-    primary: "rgb(48, 114, 180, .7)",
-    primaryGradient: getGradient("rgb(48, 114, 180, .7)"),
+    primary: "rgb(148, 176, 101, .7)",
+    primaryGradient: getGradient("rgb(148, 176, 101, .7)"),
     heading: "rgb(226, 217, 211)",
     background2: "#1E1E24",
-    backgroundGradient: getGradient("rgb(4, 4, 3)"),
+    backgroundGradient: getGradient("rgb(4, 12, 3)"),
     // modes: {
     //   light: {
     //     background: "rgb(226, 217, 211)",
